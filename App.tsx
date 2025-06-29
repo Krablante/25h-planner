@@ -123,16 +123,15 @@ const App: React.FC = () => {
         <div className="absolute inset-0 bg-black/50 backdrop-blur-sm"></div>
       </div>
       
-      <main className="relative z-10 flex flex-col items-center justify-center min-h-screen p-4 sm:p-6">
+      <main className="relative z-10 flex flex-col items-center justify-center min-h-screen p-3 sm:p-6">
         <div className="w-full max-w-2xl mx-auto">
-          <header className="text-center mb-10">
-            <h1 className="text-5xl md:text-6xl font-bold text-white tracking-tight" style={{textShadow: '0 2px 10px rgba(0,0,0,0.5)'}}>
+          <header className="text-center mb-6">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white tracking-tight" style={{textShadow: '0 2px 10px rgba(0,0,0,0.5)'}}>
               Serene Planner
             </h1>
-            <p className="text-lg text-gray-200 mt-2">A calm space for your thoughts. Plans fade after 25 hours.</p>
           </header>
           
-          <div className="bg-black/20 backdrop-blur-lg p-6 sm:p-8 rounded-2xl shadow-2xl border border-white/10">
+          <div className="bg-black/20 backdrop-blur-lg p-4 sm:p-8 rounded-2xl shadow-2xl border border-white/10">
             <div className="flex justify-center mb-6 border-b border-white/10">
               <button
                 onClick={() => setActiveView('daily')}
@@ -154,7 +153,7 @@ const App: React.FC = () => {
 
             <TodoInput onAddTodo={addTodo} placeholder={placeholder} />
             
-            <ul className="max-h-[50vh] overflow-y-auto pr-2 -mr-2">
+            <ul className="max-h-[65vh] overflow-y-auto pr-2 -mr-2">
               {currentList.map((todo) => (
                 <TodoItem
                   key={todo.id}
@@ -177,10 +176,6 @@ const App: React.FC = () => {
               )}
             </ul>
           </div>
-          
-          <footer className="text-center mt-10 text-gray-300 text-sm">
-            <p>Drag and drop to reorder plans.</p>
-          </footer>
         </div>
       </main>
     </div>

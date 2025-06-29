@@ -17,17 +17,17 @@ const TodoInput: React.FC<TodoInputProps> = ({ onAddTodo, placeholder }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 mb-8">
+    <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-2 mb-4">
       <input
         type="text"
         value={text}
         onChange={(e) => setText(e.target.value)}
         placeholder={placeholder}
-        className="flex-grow bg-white/20 backdrop-blur-sm text-white placeholder-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-white/50 transition-shadow duration-300 shadow-md"
+        className="flex-grow bg-white/20 backdrop-blur-sm text-white placeholder-gray-300 rounded-lg px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-white/50 transition-shadow duration-300 shadow-md"
       />
       <button
         type="submit"
-        className="w-full sm:w-auto bg-white/20 backdrop-blur-sm text-white font-semibold px-6 py-3 rounded-lg hover:bg-white/30 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-white/50 shadow-md disabled:opacity-50 disabled:cursor-not-allowed"
+        className="w-full sm:w-auto bg-white/20 backdrop-blur-sm text-white font-semibold px-6 py-2.5 rounded-lg hover:bg-white/30 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-white/50 shadow-md disabled:opacity-50 disabled:cursor-not-allowed"
         disabled={!text.trim()}
       >
         Add

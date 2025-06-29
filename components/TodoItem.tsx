@@ -31,14 +31,14 @@ const TodoItem: React.FC<TodoItemProps> = ({ todo, onDelete, onDragStart, onDrag
       onDragEnter={(e) => onDragEnter(e, todo.id)}
       onDragEnd={onDragEnd}
       className={`
-        group flex items-center justify-between bg-white/10 backdrop-blur-md rounded-lg p-4 mb-3 cursor-grab
+        group flex items-center justify-between bg-white/10 backdrop-blur-md rounded-lg p-3 mb-2 cursor-grab
         transition-all duration-300 ease-in-out shadow-lg
         ${isDragging ? 'opacity-30 scale-95' : 'opacity-100 scale-100'}
         ${isDragOver ? 'bg-white/20' : ''}
       `}
     >
       <div className="flex flex-col">
-        <span className="text-white text-lg">{todo.text}</span>
+        <span className="text-white text-base">{todo.text}</span>
         {showTimer && <span className="text-gray-300 text-xs mt-1">{getRemainingTime()}</span>}
       </div>
       <button
