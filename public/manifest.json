@@ -1,0 +1,23 @@
+{
+  "name": "Serene Planner",
+  "short_name": "Serene",
+  "description": "A calming daily planner where tasks expire after 25 hours. Users can add, delete, and reorder their plans with a simple drag-and-drop interface, all set against a tranquil, aesthetically pleasing backdrop.",
+  "icons": [
+    {
+      "src": "/icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#111827",
+  "theme_color": "#111827"
+}

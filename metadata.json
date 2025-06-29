@@ -1,0 +1,5 @@
+{
+  "name": "Serene Planner",
+  "description": "A calming daily planner where tasks expire after 25 hours. Users can add, delete, and reorder their plans with a simple drag-and-drop interface, all set against a tranquil, aesthetically pleasing backdrop.",
+  "requestFramePermissions": []
+}
