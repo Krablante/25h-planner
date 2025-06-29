@@ -17,7 +17,7 @@ const TodoInput: React.FC<TodoInputProps> = ({ onAddTodo, placeholder }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="flex gap-3 mb-8">
+    <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 mb-8">
       <input
         type="text"
         value={text}
@@ -27,7 +27,7 @@ const TodoInput: React.FC<TodoInputProps> = ({ onAddTodo, placeholder }) => {
       />
       <button
         type="submit"
-        className="bg-white/20 backdrop-blur-sm text-white font-semibold px-6 py-3 rounded-lg hover:bg-white/30 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-white/50 shadow-md disabled:opacity-50 disabled:cursor-not-allowed"
+        className="w-full sm:w-auto bg-white/20 backdrop-blur-sm text-white font-semibold px-6 py-3 rounded-lg hover:bg-white/30 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-white/50 shadow-md disabled:opacity-50 disabled:cursor-not-allowed"
         disabled={!text.trim()}
       >
         Add

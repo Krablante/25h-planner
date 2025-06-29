@@ -136,7 +136,7 @@ const App: React.FC = () => {
             <div className="flex justify-center mb-6 border-b border-white/10">
               <button
                 onClick={() => setActiveView('daily')}
-                className={`px-6 py-2 text-lg font-medium transition-colors duration-300 rounded-t-lg ${
+                className={`px-4 sm:px-6 py-2 text-base sm:text-lg font-medium transition-colors duration-300 rounded-t-lg ${
                   activeView === 'daily' ? 'text-white bg-white/10' : 'text-gray-400 hover:text-white'
                 }`}
               >
@@ -144,7 +144,7 @@ const App: React.FC = () => {
               </button>
               <button
                 onClick={() => setActiveView('global')}
-                className={`px-6 py-2 text-lg font-medium transition-colors duration-300 rounded-t-lg ${
+                className={`px-4 sm:px-6 py-2 text-base sm:text-lg font-medium transition-colors duration-300 rounded-t-lg ${
                   activeView === 'global' ? 'text-white bg-white/10' : 'text-gray-400 hover:text-white'
                 }`}
               >
